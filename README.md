@@ -5,18 +5,26 @@ Utility in Ruby that reads all the images in the attached directory, extracts th
 ## Dependencies
 - [Exif](https://github.com/tonytonyjan/exif)
 
+## Instalation
+```
+$ bundle install
+```
 ## Run
-Export to csv format
+Export to csv format (default)
 ```
 $ ruby app.rb
 ```
-change format csv or html
+### Options
+Choose the output format: csv or html
 ```
 $ ruby app.rb --format=csv|html
 ```
+Especify the directory that contains the images:
+```
+$ ruby app.rb --directory=custom_directory
+```
 
 ## Test
----------------
 ```
 $ rspec
 ```
